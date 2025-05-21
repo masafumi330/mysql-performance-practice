@@ -1,0 +1,9 @@
+services:
+  db:
+    image: mysql:8.0.28-oracle
+    container_name: db
+    volumes:
+      - ./:/usr/local/src
+    working_dir: /usr/local/src
+    environment:
+      - MYSQL_ROOT_PASSWORD=my-secret-pw
